@@ -35,7 +35,7 @@ import {
 import { currentId } from "async_hooks";
 export class Blockchain {
   // Let's define that our "genesis" block as an empty block, starting from the January 1, 1970 (midnight "UTC").
-  public static readonly GENESIS_BLOCK = new Block(0, [], 0, 0, "fiat lux");
+  public static readonly GENESIS_BLOCK = new Block(0, [], 0, 0, "Mr Felix EMU 2018 Genesis block");
 
   public static readonly DIFFICULTY = 4;
   public static readonly TARGET = 2 ** (256 - Blockchain.DIFFICULTY);
