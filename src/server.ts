@@ -32,12 +32,36 @@ import {
   encryptPasswords
 } from "./utils";
 
+
+import * as cors from "cors";
+
 // Web server:
 const ARGS = parseArgs(process.argv.slice(2));
 const PORT = ARGS.port || 3000;
+
 const app = express();
+
 const nodeId = ARGS.id || uuidv4();
 const blockchain = new Blockchain(nodeId);
+
+
+//options for cors midddleware
+const options:cors.CorsOptions = {
+  allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept", "X-Access-Token"],
+  credentials: true,
+  methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
+  origin: "http://localhost:3000",
+  preflightContinue: false
+};
+
+//use cors middleware
+app.use(cors(options));
+
+//add your routes
+
+//enable pre-flight
+app.options("*", cors(options));
+
 
 // Set up bodyParser:
 app.use(bodyParser.urlencoded({ extended: false }));
