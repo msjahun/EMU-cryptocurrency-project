@@ -1,1 +1,0 @@
-{"version":3,"file":"ursa.js","sourceRoot":"","sources":["../src/ursa.ts"],"names":[],"mappings":"","sourcesContent":["// For untyped JS Encrypt Library\r\ndeclare module \"ursa\" {\r\n  var noTypeInfoYet: any; // any var name here really\r\n  export = noTypeInfoYet;\r\n}\r\n"]}

@@ -9,7 +9,7 @@
     "declaration": true,
     "inlineSources": true,
     "experimentalDecorators": true,
-    "outDir": "build",
+    "outDir": "dist",
     "baseUrl": ".",
     "paths": {
       "*": [
