@@ -109,7 +109,7 @@ curl -X POST -H "Content-Type: application/json" -d "{
 }" "${NODE2_URL}/propogateAccountCreation" -w "\n"
 
 curl -X POST -H "Content-Type: application/json" -d "{
- \"address\": \"Ben Affleck\",
+ \"address\": \"AbdullahiIsmail\",
  \"balance\": 100,
  \"action\": \"${CREATE_EXTERNAL_ACCOUNT}\",
  \"account_type\": \"${EXTERNAL_ACCOUNT}\",

@@ -108,6 +108,8 @@ app.post("/blocks/mine", (req: express.Request, res: express.Response) => {
   res.json(`Mined new block #${newBlock.blockNumber}`);
 });
 
+
+
 app.post("/createAccount", (req: express.Request, res: express.Response) => {
   const { address, balance, account_type, nodeId } = req.body;
   const createdNode = blockchain.createAccount(
