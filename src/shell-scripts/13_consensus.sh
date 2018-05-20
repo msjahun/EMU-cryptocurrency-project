@@ -203,4 +203,6 @@ curl -X PUT "${NODE2_URL}/nodes/consensus" -w "\n"
 curl -X PUT "${NODE1_URL}/nodes/consensus" -w "\n"
 curl -X PUT "${NODE3_URL}/nodes/consensus" -w "\n"
 
+echo -e && read -n 1 -s -r -p "Waiting to terminate EMU coid application Press any key to Exit..." && echo -e
 wait
+$SHELL
